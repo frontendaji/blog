@@ -3,7 +3,12 @@
     margin: 0;
     padding: 0;
     color: #FBF8F8;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins-SemiBold';
+}
+
+@font-face{
+    font-family: 'Poppins-SemiBold';
+    src: url('/assets/font/Poppins-SemiBold.ttf')
 }
 
 body{

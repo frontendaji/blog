@@ -59,4 +59,16 @@
         height: 1px;
         background-color: #F0ECE5;
     }
+
+    main{
+        flex-direction: column;
+    }
+
+    article{
+        flex-direction: column;
+    }
+
+    article .images img{
+        max-width: 100%;
+    }
 }

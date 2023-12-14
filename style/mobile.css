@@ -1,4 +1,9 @@
 @media(width <= 576px){
+
+    header{
+        padding-bottom: 4rem;
+    }
+
     nav{
         height: 3.5rem;
         z-index: 1000;
@@ -65,5 +70,62 @@
         width: 25px;
         height: 1px;
         background-color: #F0ECE5;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    section{
+        max-width: 100%;
+        padding: 1rem 0;
+    }
+
+    article{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 0;
+        margin: 1rem;
+    }
+
+    article .description-article{
+            padding: 1rem;
+            gap: 1rem;
+    }
+
+    article .images img{
+        max-width: 100%;
+    }
+
+    .description-article .title h1{
+        font-size: 1.1em;
+    }
+
+    .description .paragraf{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* Ganti dengan jumlah baris yang diinginkan */
+        -webkit-box-orient: vertical;
+        font-size: 0.8em;
+    }
+
+    .description-article button{
+        font-size: 0.8em;
+        
+    }
+
+    aside .newsletter{
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    aside .newsletter h2{
+        font-size: 1.2em;
+    }
+
+    aside .newsletter p{
+        font-size: 0.85em;
+        padding-bottom: 1rem;
     }
 }

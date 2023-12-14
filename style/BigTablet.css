@@ -1,0 +1,19 @@
+@media screen and (min-width:769px) and (max-width:1024px){
+    aside .newsletter{
+        margin: 2rem 2rem 0 0;
+    }
+
+    
+    
+    article{
+        padding: 2rem 1rem
+    }
+
+    article .images img{
+        max-width: 100%;
+    }
+
+    .description-article .title h1{
+        font-size: 1.3em;
+    }
+}

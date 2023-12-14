@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #FBF8F8;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #4019bf ;
+}
+
+nav{
+    position: sticky;
+    width: 100%;
+    height: 100%;
+    top: 1rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-items: center;
+    border: 1px solid white;
+    height: 5rem;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.103);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid #31304D;
+}
+
+nav p{
+    font-size: 2em;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+    
+}
+
+nav li{
+    font-size: 1.1em;
+    list-style: none;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #F0ECE5;
+}
+.menu-togle{
+    display: none;
+}
+

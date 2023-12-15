@@ -1,0 +1,463 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+body{
+    background-color: #191717;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7rem;
+}
+
+nav{
+    position: fixed;
+    width: 95%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-items: center;
+    height: 4rem;
+    background: rgba(255, 255, 255, 0.103);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid #31304D;
+    margin-top: 1rem;
+}
+
+nav p{
+    font-size: 1.5em;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+    
+}
+
+nav li{
+    font-size: 1em;
+    list-style: none;
+}
+
+nav li a{
+    text-decoration: none;
+}
+.menu-togle{
+    display: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 60rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+article .thumbnail{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+article .images img{
+    max-width: 23rem;
+    border-radius: 10px;
+}
+
+article .thumbnail .title h1{
+    font-size: 1.5em;
+}
+
+article .thumbnail .description p {
+    font-size: 0.85em;
+}
+
+article .thumbnail .description .paragraf{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Ganti dengan jumlah baris yang diinginkan */
+    -webkit-box-orient: vertical;
+}
+
+
+article .thumbnail .button-selengkapnya button{
+    max-width: 100%;
+    padding: 10px 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #191717;
+}
+
+aside{
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+
+aside .container{
+    position: sticky;
+    top: 7rem;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+
+aside .container .newsletter{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 999;
+}
+
+aside .container .newsletter form{
+    position: relative;
+}
+
+aside .container .newsletter form input{
+    width: 100%;
+    height: 2.3rem;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    padding-left: 1rem;
+    
+}
+
+aside .container .newsletter form img{
+    width: 1.5rem;
+    position: absolute;
+    top: 8px;
+    right: 1rem;
+    filter: brightness(0) invert(1);
+}
+
+aside .container .social-media{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+aside .container .social-media ul{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+aside .container .social-media ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background-color: #191717;
+    gap: 1rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 10rem;
+}
+
+aside .container .social-media ul li img{
+    width: 1rem;
+    height: 1rem;
+    filter: brightness(0) invert(1);
+}
+
+aside .container .social-media ul li p{
+    font-size: 0.8em;
+}
+
+@media(width <= 576px){
+
+    header{
+        padding-bottom: 4rem;
+    }
+
+    nav{
+        height: 3.5rem;
+        z-index: 1000;
+        transition: height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+        align-items: start;
+        padding-top: 10px;
+        border-radius: 10px;
+        justify-content: space-between;
+    }
+
+    nav p{
+        font-size: 1.3em;
+    }
+
+    nav ul{
+        display: none;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .slide{
+        height: 30rem;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid #31304D;
+        padding: 10px 2rem;
+        transition: height 0.5s ease-in-out;
+    }
+
+    .slide ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation: slide 0.4s linear forwards;
+        animation-delay: 0.3s;
+        opacity: 0;
+        font-size: 0.85em;
+    }
+
+    @keyframes slide {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
+
+
+    .menu-togle{
+        display: flex;
+        height: 2rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .menu-togle span{
+        width: 25px;
+        height: 1px;
+        background-color: #F0ECE5;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    section{
+        max-width: 100%;
+        padding: 1rem 0;
+    }
+
+    article{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 0;
+        margin: 1rem;
+    }
+
+    article .thumbnail{
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    article .images img{
+        max-width: 100%;
+    }
+
+    article .thumbnail .title h1{
+        font-size: 1.1em;
+    }
+
+    article .thumbnail .description .paragraf{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* Ganti dengan jumlah baris yang diinginkan */
+        -webkit-box-orient: vertical;
+        font-size: 0.8em;
+    }
+
+    article .thumbnail .button-selengkapnya button{
+        font-size: 0.7em;
+        
+    }
+
+    aside .container .newsletter{
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    aside .container .newsletter h2{
+        font-size: 1.2em;
+    }
+
+    aside .container .newsletter p{
+        font-size: 0.85em;
+        padding-bottom: 1rem;
+    }
+
+    aside .container .social-media{
+        margin: 1rem;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    aside .container .social-media h2{
+        font-size: 1.2em;
+    }
+
+    aside .container .social-media ul{
+        flex-direction: column;
+    }
+
+    aside .container .social-media ul li{
+        padding: 0 1rem;
+        height: 2rem;
+        font-size: 0.8em;
+    }
+
+    aside .container .social-media ul li img{
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+@media(576px <= width <= 768px){
+    nav{
+        padding-top: 10px;
+        align-items: start;
+        border-radius: 10px;
+        transition: height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        display: none;
+        
+    }
+
+    .slide{
+        height: 30rem;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid #31304D;
+        transition: height 0.5s ease-in-out;
+        align-items: flex-start;
+    }
+
+    .slide ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 5rem;
+        animation: slide 0.4s linear forwards;
+        animation-delay: 0.3s;
+        opacity: 0;
+        padding-top: 3rem;
+    }
+
+    @keyframes slide {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
+
+    .menu-togle{
+        display: flex;
+        height: 2.1rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 4px;
+    }
+
+    .menu-togle span{
+        width: 30px;
+        height: 1px;
+        background-color: #F0ECE5;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    article{
+        flex-direction: column;
+    }
+
+    article .images img{
+        max-width: 100%;
+    }
+}
+
+@media (768px <= width <= 1024px){
+    
+    article{
+        flex-direction: column;
+    }
+
+    article .images img{
+        max-width: 100%;
+    }
+
+    .description-article .title h1{
+        font-size: 1.3em;
+    }
+}

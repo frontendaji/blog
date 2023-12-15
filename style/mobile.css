@@ -128,4 +128,12 @@
         font-size: 0.85em;
         padding-bottom: 1rem;
     }
+
+    aside .social-media{
+        margin: 1rem;
+    }
+
+    aside .social-media ul{
+        flex-direction: column;
+    }
 }
